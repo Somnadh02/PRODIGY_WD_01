@@ -1,0 +1,336 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  
+  box-sizing: border-box;
+  padding-right: calc(100vw - 100%);
+  overflow-y: scroll;
+  background: url('https://media.istockphoto.com/id/587195680/photo/track-arena-3d.jpg?s=1024x1024&w=is&k=20&c=I-lDrrOPxdWZUMEUrR3S2dbhafk2x_gPSggLvSsGgDE=') no-repeat center center / cover;
+}
+#contact{
+  background: transparent;
+}
+.contact-form{
+  background:transparent;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #333;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  z-index: 1000;
+  transition: background-color 0.3s;
+}
+
+.navbar .logo {
+  display: flex;
+  align-items: center;
+}
+
+.navbar .logo img {
+  width: 40px;
+  margin-right: 10px;
+}
+
+.navbar h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.nav-menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-menu li {
+  margin: 0;
+}
+
+.nav-menu li a {
+  color: white;
+  text-decoration: none;
+  padding: 5px 10px;
+  transition: color 0.3s, background-color 0.3s;
+}
+
+.nav-menu li a:hover {
+  color: #ff9800;
+  background-color: #222;
+  border-radius: 5px;
+}
+
+.home-section, .content-section {
+  padding: 80px 20px;
+  text-align: center;
+  margin-top: 60px;
+}
+.home-section, .content-section img{
+justify-content: start;
+}
+.home-section {
+  background-color: #fff;
+}
+
+.home-image, .content-image {
+  
+  width: 80%;
+  max-width: 500px;
+  border-radius: 10px;
+  transition: transform 0.3s;
+}
+
+.home-image:hover, .content-image:hover {
+  transform: scale(1.05);
+}
+
+.cta-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  color: white;
+  background-color: #ff9800;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+  background-color: #e68900;
+}
+
+.content-section {
+  background-color: #fff;
+  padding: 40px 20px;
+  margin: 20px 0;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.services-icons {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 20px;
+}
+
+.service-item {
+  text-align: center;
+  
+}
+.service-item:hover{
+  cursor:pointer;
+
+}
+
+.service-item i {
+  font-size: 48px;
+  color: #333;
+  transition: color 0.3s;
+}
+
+.service-item p {
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+.service-item:hover i {
+  color: #ff9800;
+}
+
+.gallery-grid {
+  
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-around;
+  background: transparent;
+}
+
+.gallery-grid img {
+  width: calc(45% - 2px);
+  border-radius: 10px;
+  transition: transform 0.3s;
+}
+
+.gallery-grid img:hover {
+  transform: scale(1.20);
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.contact-form input, .contact-form textarea {
+  width: 80%;
+  max-width: 500px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.contact-form button {
+  padding: 10px 20px;
+  font-size: 16px;
+  color: white;
+  background-color: #ff9800;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+  background-color:rgb(62, 189, 50);
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  margin-top: 20px;
+}
+.content-section {
+  padding: 60px 20px;
+  background-color: #f0f0f0; 
+}
+
+#home {
+  background: url(https://cdn.pixabay.com/photo/2024/03/11/07/18/ai-generated-8626005_640.png) no-repeat;
+  background-size: 100%; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content:flex-end;
+  text-align:right;
+  padding: 100px 20px;
+  color: rgb(8, 0, 0); 
+  min-height: 50vh;
+}
+
+#about {
+  background-color: #d0d0d0;
+}
+
+#services {
+  background-color: #c0c0c0; 
+}
+
+#gallery {
+  background-color: #b0b0b0; 
+}
+
+#contact {
+  background-color: #a0a0a0; 
+}
+
+.image-text-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.image-text-container img {
+  max-width: 45%;
+  margin-right: 20px;
+}
+
+.image-text-container div {
+  max-width: 50%;
+  text-align: right;
+}
+
+h2 {
+  font-size: 2.5em;
+  font-weight: bold;
+  color: #333;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #333;
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+body {
+  padding-right: calc(100vw - 100%);
+  overflow-y: scroll;
+  background: url('https://example.com/background.jpg') no-repeat center center / cover; /* Background image for body */
+}
+
+#welcome-text {
+  font-size: 1.5em;
+  max-width: 700px;
+  margin: 20px auto;
+}
+
+.cta-button {
+  background-color: #333;
+  color: white;
+  padding: 15px 30px;
+  font-size: 1.2em;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-top: 20px;
+}
+
+.cta-button:hover {
+  background-color: #555;
+}
+
+.nav-menu {
+  display: flex;
+  justify-content: space-around;
+  padding-right: 20px; 
+}
+
+.nav-menu li {
+  list-style: none;
+}
+
+.nav-menu a {
+  text-decoration: none;
+  color: black;
+  padding: 10px 15px;
+  font-size: 1.1em;
+  display: flex;
+  align-items: center;
+}
+
+.nav-menu a i {
+  margin-right: 8px;
+}
+
+.car-animation {
+  position: fixed;
+  bottom: 20px;
+  left: -100px;
+  width: 100px;
+  height: 50px;
+  background: url('https://cdn.pixabay.com/photo/2012/05/29/00/43/car-49278_1280.jpg') no-repeat center center / contain; /* Use an actual car image URL */
+  z-index: 1000; 
+  transition: left 1s ease-in-out;
+}
+
+.additional-content {
+  margin-top: 20px;
+  font-size: 1.1em;
+  line-height: 1.5;
+}
